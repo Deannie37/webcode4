@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Daftar Halaman Web</title>
+</head>
+<body>
+
+<h2>Pilih Halaman</h2>
+
+<ul>
+    <li><a href="index.html">index</a></li>
+    <li><a href="BasicFormLogin.html">Basic Form Login</a></li>
+    <li><a href="CardDetails.html">Card Details</a></li>
+    <li><a href="ListBasic.html">List Basic</a></li>
+    <li><a href="ListCards.html">List Cards</a></li>
+    <li><a href="Table.html">Table</a></li>
+    <li><a href="TableMasterActions.html">Table Master Actions</a></li>
+    <li><a href="TableMonthly.html">Table Monthly</a></li>
+    <li><a href="TableMonthlyReport.html">Table Monthly Report</a></li>
+
+</ul>
+
+</body>
+</html>
