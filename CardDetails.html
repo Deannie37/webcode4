@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Task 08 - Card Details</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <script>
+    function openTab(tabName){
+      var i, x = document.getElementsByClassName("tabContent");
+      for(i=0;i<x.length;i++){
+        x[i].style.display="none";
+      }
+      document.getElementById(tabName).style.display="block";
+    }
+  </script>
+</head>
+<body class="w3-container">
+
+<h2>Task 08. Card Details</h2>
+
+<div class="w3-row-padding">
+
+  <!-- LEFT CARD -->
+  <div class="w3-col" style="width:25%">
+    <div class="w3-card">
+      <img src="https://www.w3schools.com/howto/img_avatar.png" style="width:100%">
+      <div class="w3-container">
+        <h4>Kaedehara Kazuha</h4>
+        <p>Boss of All Boss</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- RIGHT CARD WITH TABS -->
+  <div class="w3-col" style="width:75%">
+    <div class="w3-card">
+
+      <!-- TAB MENU -->
+      <div class="w3-bar w3-light-grey">
+        <button class="w3-bar-item w3-button w3-red" onclick="openTab('General')">General</button>
+        <button class="w3-bar-item w3-button" onclick="openTab('Gameplay')">Gameplay</button>
+        <button class="w3-bar-item w3-button" onclick="openTab('Constellations')">Constellations</button>
+      </div>
+
+      <!-- GENERAL -->
+      <div id="General" class="w3-container tabContent">
+        <h3>General</h3>
+        <p>Kaedehara Kazuha is a playable Anemo character in Genshin Impact.</p>
+        <p>
+          A wandering samurai of the once-famed Kaedehara Clan with an ability to read the sounds of nature,
+          Kazuha is a temporary crew member of The Crux. Despite being burdened by the many happenings
+          of his past, he still maintains an easygoing disposition.
+        </p>
+      </div>
+
+      <!-- GAMEPLAY (SESUIA SS) -->
+      <div id="Gameplay" class="w3-container tabContent" style="display:none">
+        <h3>Gameplay</h3>
+
+        <p><b>Normal Attack</b><br>
+        Performs up to 5 rapid strikes.</p>
+
+        <p><b>Charged Attack</b><br>
+        Consumes a certain amount of Stamina to unleash 2 rapid sword strikes.</p>
+
+        <p><b>Plunging Attack</b><br>
+        Plunges from mid-air to strike the ground below, damaging opponents along the path and
+        dealing AoE DMG upon impact. If this Plunging Attack is triggered by Chihayaburu,
+        it will be converted to Plunging Attack: Midare Ranzan.</p>
+
+        <p><b>Plunging Attack: Midare Ranzan</b><br>
+        When a Plunging Attack is performed using the effects of the Elemental Skill Chihayaburu,
+        Plunging Attack DMG is converted to Anemo DMG and will create a small wind tunnel
+        via secret blade technique that pulls in nearby objects and opponents.</p>
+      </div>
+
+      <!-- CONSTELLATIONS (SESUIA SS) -->
+      <div id="Constellations" class="w3-container tabContent" style="display:none">
+        <h3>Constellations</h3>
+
+        <p><b>Constellation Level 6, Crimson Momiji</b><br>
+        After using Chihayaburu or Kazuha Slash, Kaedehara Kazuha gains an Anemo Infusion for 5s.
+        Additionally, each point of Elemental Mastery will increase the DMG dealt by
+        Kaedehara Kazuha's Normal, Charged, and Plunging Attacks by 0.2%.
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>

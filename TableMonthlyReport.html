@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Task 05</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <script>
+    function mySearch() {
+      var input = document.getElementById("myInput").value.toUpperCase();
+      var tr = document.getElementsByTagName("tr");
+      for (var i = 1; i < tr.length; i++) {
+        var td = tr[i].getElementsByTagName("td")[1];
+        tr[i].style.display =
+          td.innerHTML.toUpperCase().indexOf(input) > -1 ? "" : "none";
+      }
+    }
+  </script>
+</head>
+<body class="w3-container">
+
+<input id="myInput" class="w3-input w3-border" onkeyup="mySearch()" placeholder="Search Name">
+
+<table class="w3-table-all w3-margin-top">
+<tr class="w3-blue">
+  <th>No</th><th>Name</th><th>Jan</th><th>Feb</th><th>Mar</th>
+</tr>
+<tr><td>1</td><td>Kaedehara Kazuha</td><td>80</td><td>90</td><td>85</td></tr>
+<tr><td>2</td><td>Kuki Shinobu</td><td>60</td><td>70</td><td>75</td></tr>
+<tr><td>3</td><td>Neuvillette</td><td>50</td><td>65</td><td>60</td></tr>
+</table>
+
+</body>
+</html>
